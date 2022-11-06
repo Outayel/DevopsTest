@@ -8,7 +8,7 @@ pipeline {
         }
           stage('Git') {
             steps {
-                echo 'Pulling...';
+                echo 'Pulling... Latest';
             }
         }
           stage('MVN') {
