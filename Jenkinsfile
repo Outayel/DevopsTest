@@ -16,14 +16,9 @@ pipeline {
                  sh """mvn -version"""
             }
         }
-         stage('MVN Complie') {
-            steps {
-                 sh """mvn compile"""
-            }
-        }
          stage('MVN clean') {
             steps {
-                 sh """mvn clean"""
+                 sh "mvn clean install"
             }
         }
     }
