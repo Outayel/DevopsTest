@@ -8,7 +8,9 @@ pipeline {
         }
           stage('Git') {
             steps {
-                echo 'Pulling... Latest';
+                echo 'Pulling...';
+                git branch :'main',
+                url:'https://github.com/Outayel/DevopsTest.git';
             }
         }
           stage('MVN') {
